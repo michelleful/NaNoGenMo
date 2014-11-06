@@ -65,7 +65,8 @@ with open('pnp_chapter1.html', 'r') as f:
         # clear extra spaces
         new_sentence = re.sub(' +', ' ', new_sentence)
 
-        # fixing some punctuation issues due to the introduction of extra spaces
+        # fixing some punctuation issues due to 
+        # introduction of extra spaces
         new_sentence = new_sentence.replace(' .', '.')\
                                    .replace(' ,', ',').replace(' ;', ';')\
                                    .replace(' !', '!').replace(' ?', '?')\
@@ -74,11 +75,11 @@ with open('pnp_chapter1.html', 'r') as f:
                                    .replace(' </A>', '</A>')\
 
         # TODO: fix spaces around quotes. Would help if we had separate marking
-        # of pre- and post-quotes. Current fix below is inadequate.
+        # of pre- and post-quotes. Current fix below is inadequate but
+        # not terrible
         new_sentence = re.sub(' " ', '"', new_sentence)
 
         # clear extra spaces again
         new_sentence = re.sub(' +', ' ', new_sentence)
 
         print(new_sentence)
-
