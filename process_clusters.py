@@ -19,8 +19,8 @@ with open(PATH_TO_CLUSTER_FILE, 'r') as f:
             continue
         if IGNORE_TWITTER_HANDLES and word.startswith('@'):
             continue
-        if (IGNORE_MIXED_ALPHANUMERIC and re.search('[0-9]', word) and
-                                          re.search('[A-z]', word)):
+        if (IGNORE_MIXED_ALPHANUMERIC and re.search('[0-9]', word)
+                                      and re.search('[A-z]', word)):
             continue
         if IGNORE_NON_ALPHANUMERIC and not word.isalnum():
             continue
@@ -28,7 +28,8 @@ with open(PATH_TO_CLUSTER_FILE, 'r') as f:
         word_to_cluster[word] = cluster
         cluster_to_word[cluster].add(word)
         word_frequencies[word] = int(frequency)
-        
+
+
 def get_another_word_in_cluster(word):
     if word in word_to_cluster:
         return random.choice(list(cluster_to_word[word_to_cluster[word]]))
