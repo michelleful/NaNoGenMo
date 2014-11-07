@@ -27,7 +27,7 @@ text right out of the box.
 ### Acknowledgments
 
 With apologies to Jane Austen and thanks to 
-[Pemberley Manor](http://www.pemberley.com/janeinfo/pridprej.html#toc) 
+[Republic of Pemberley](http://www.pemberley.com/janeinfo/pridprej.html#toc) 
 for the supply of their e-text, as well as CMU for 
 [TweetNLP](http://www.ark.cs.cmu.edu/TweetNLP/).
 
