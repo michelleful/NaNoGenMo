@@ -33,11 +33,17 @@ END_QUOTE   = "''"
 REPLACE_PROSE = False
 
 # probability of replacing a word (less for greater readability)
-REPLACE_WITH_PROBABILITY = 0.3
+REPLACE_WITH_PROBABILITY = 0.5
 
 # I'm using hyperrefs represent names or anything else I want to protect 
 # from replacement - insert these yourself (use NLTK for named entity detection)
+
+# NB!!! Hyperrefs <a href=...> and </a>
+# must be together on on line
 IGNORE_HYPERREFS = True  
+
+# NB also that if you have lower case tags, you may need to 
+# fix some of the replacements in process_pnp.py
 
 # create a tooltip for each replaced word?
 CREATE_TOOLTIP = True
