@@ -6,7 +6,10 @@ My entry (entries?) to National Novel Generation Month
 
 ## Twide and Twejudice (2014)
 
-[Read the novel](https://cdn.rawgit.com/michelleful/NaNoGenMo/master/twide_and_twejudice.html)
+[Read the novel (dialogue replacement)](https://rawgit.com/michelleful/NaNoGenMo/master/twide_and_twejudice.html)
+
+[Read the novel (full replacement)](https://rawgit.com/michelleful/NaNoGenMo/master/twide_and_twejudice_replace_prose.html)
+
 
 ### What the hell is this?
 
@@ -15,6 +18,8 @@ with another word in the same
 [hierarchical Twitter cluster](http://www.ark.cs.cmu.edu/TweetNLP/cluster_viewer.html), 
 that is, with another word that is used in a similar context on Twitter
 as computed by the CMU TweetNLP project.
+
+In the second link, both dialogue and prose are subject to the same treatment.
 
 ### How to run:
 
