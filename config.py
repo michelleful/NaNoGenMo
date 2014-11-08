@@ -30,7 +30,7 @@ IGNORE_NON_ALPHANUMERIC = True
 REPLACE_DIALOGUE = True
 START_QUOTE = "``"
 END_QUOTE   = "''"
-REPLACE_PROSE = False
+REPLACE_PROSE = True
 
 # probability of replacing a word (less for greater readability)
 REPLACE_WITH_PROBABILITY = 0.5
