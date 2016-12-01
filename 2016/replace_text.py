@@ -33,12 +33,15 @@ grawlixes = {
     ('visit', 'VERB'): None,
     ('marry', 'VERB'): None,
     ('wife', 'NOUN'): ('a', 'DET'),
-    ('husband', 'NOUN'): ('a', 'DET')
+    ('husband', 'NOUN'): ('a', 'DET'),
+    ('ancle', 'NOUN'): ('his', 'DET')
 }
 
 def grawlix(length):
     chars = list('@#$%&*')
     random.shuffle(chars)
+    if chars[0] == '*':  # avoid problems with italics in markdown
+        chars = chars[1:] + ['*']
     chars = ''.join(chars)
     chars = chars * (int(length / len(chars)) + 1)
     return chars[:length]
@@ -79,5 +82,6 @@ for token in doc:
 
 
 with open('output1.md', 'w') as g:
-    g.write('# Pride and Prejudice and Innuendo\n\n\n')
+    g.write('# Pride and Prejudice and Innuendo\n')
+    g.write('### by Jane Austen and Python Script\n\n')
     g.write(string)
