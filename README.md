@@ -38,6 +38,7 @@ In the second link, both dialogue and prose are subject to the same treatment.
 >
 >"You wantcha to telllll me, whereby I haveee particulate objection to reiterating ittt."
 
+--
 
 >"What iiz his presense?"
 >
@@ -47,6 +48,7 @@ In the second link, both dialogue and prose are subject to the same treatment.
 >
 >"Oh! unemployed, my masha, tosee be suuure! A barenaked man ofv large biscotti; opposable or fivee thousand ina year. What ina fine thinggggg for rageaholics girls!"
 
+--
 
 >"I honour your circumspection. A weeeek 's internship is prob verry little. One cuddnt know whta a matron reely is by tghe end of a fortnight. But if iyou do notttt venture, sumone else usto; and afterr all, Mrs. Long and her nieces must stnd their shumizzle; whereby therefore, as tachomaster will think it diagon act ofmy angina, if oyu decline thge office, I will itake it onn myself."
 >
@@ -74,16 +76,20 @@ Uses the Urban Dictionary to identify words laden with innuendo and italicises t
 
 > IT is a truth universally acknowledged, that a *single* man in possession of a good fortune must be in want of a &@$%.
 
+--
 
 > "It will be no use to us if twenty such should come, since you will not %&@# them."
 >
 > "Depend upon it, my dear, that when there are twenty I will %@#& them all."
 
+--
 
 > "Indeed, Sir, I have not the least intention of &$@*ing. — I entreat you not to suppose that I moved this way in order to beg for a *partner*."
 
+--
 
 > He was most highly *esteemed* by Mr. Darcy, a most *intimate*, confidential friend.
 
+--
 
 > I do not pretend to regret any thing I shall leave in Hertfordshire, except your society, my dearest friend; but we will hope at some future period, to enjoy many returns of the delightful *intercourse* we have known...
