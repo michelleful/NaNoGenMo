@@ -84,7 +84,7 @@ Uses the Urban Dictionary to identify words laden with innuendo and italicises t
 
 --
 
-> "Indeed, Sir, I have not the least intention of &$@*ing. — I entreat you not to suppose that I moved this way in order to beg for a *partner*."
+> "Indeed, Sir, I have not the least intention of &$@#ing. — I entreat you not to suppose that I moved this way in order to beg for a *partner*."
 
 --
 
