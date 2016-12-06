@@ -32,6 +32,8 @@ grawlixes = {
     ('dance', 'VERB'): None,
     ('visit', 'VERB'): None,
     ('marry', 'VERB'): None,
+    ('dance', 'NOUN'): None,
+    ('dancing', 'NOUN'): None,
     ('wife', 'NOUN'): ('a', 'DET'),
     ('husband', 'NOUN'): ('a', 'DET'),
     ('ancle', 'NOUN'): ('his', 'DET')
@@ -40,11 +42,12 @@ grawlixes = {
 def grawlix(length):
     chars = list('@#$%&*')
     random.shuffle(chars)
-    if chars[0] == '*':  # avoid problems with italics in markdown
-        chars = chars[1:] + ['*']
     chars = ''.join(chars)
     chars = chars * (int(length / len(chars)) + 1)
-    return chars[:length]
+    chars = chars[:length]
+    # escape asterisks which might be taken as italic markers
+    chars = chars.replace('*', '\\*')
+    return chars
 
 
 suffixes = {
@@ -65,6 +68,14 @@ suffixes = {
 }
 
 
+def decide_suffix(token):
+    suffix = suffixes[token.tag_]
+    # account for gerunds which are labelled NN but should have an -ing
+    if token.tag_ == 'NN' and token.suffix_ == 'ing':
+        suffix = 'ing'
+    return suffix    
+
+
 string = ''
 for token in doc:
     if token.pos_ in ['VERB', 'NOUN', 'ADJ', 'ADV'] and token.lemma_ in innuendo:
@@ -72,7 +83,7 @@ for token in doc:
     elif (token.lemma_, token.pos_) in grawlixes:
         subordinate_word_pos = grawlixes[(token.lemma_, token.pos_)]
         if subordinate_word_pos is None or subordinate_word_pos in [(x.orth_, x.pos_) for x in token.children]:
-            suffix = suffixes[token.tag_]
+            suffix = decide_suffix(token)
             num_asterisks = 4
             string += token.text_with_ws.replace(token.orth_, grawlix(num_asterisks) + suffix)
         else:
